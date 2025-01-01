@@ -13,26 +13,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Install Dependencies for Canvas
+      # Step 2: Install System Dependencies for Canvas
       - name: Install System Dependencies for Canvas
         run: |
           sudo apt-get update
           sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
 
-      # Step 3: Pre-Install Canvas Module
-      - name: Pre-install Canvas Package
+      # Step 3: Install Node.js Dependencies in the Action's Directory
+      - name: Install Node.js Dependencies
         run: |
-          mkdir -p ~/.npm-global/lib/node_modules
-          npm config set prefix '~/.npm-global'
+          cd $GITHUB_WORKSPACE
           npm install canvas
-        env:
-          PATH: ~/.npm-global/bin:$PATH
 
       # Step 4: Run the Platane Snake Action
       - name: Generate GitHub Contribution Snake
         uses: Platane/snk/svg-only@v3
-        env:
-          NODE_PATH: ~/.npm-global/lib/node_modules
         with:
           github_user_name: Raghavendra-Reddy-Padala
           outputs: |
