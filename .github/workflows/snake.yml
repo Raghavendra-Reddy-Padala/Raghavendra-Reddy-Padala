@@ -13,25 +13,26 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16 # Compatible version for 'canvas'
-
-      # Step 3: Install Native Dependencies for Canvas
-      - name: Install Dependencies for Canvas
+      # Step 2: Install Dependencies for Canvas
+      - name: Install System Dependencies for Canvas
         run: |
           sudo apt-get update
           sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
 
-      # Step 4: Install Canvas
-      - name: Install Canvas Package
-        run: npm install canvas
+      # Step 3: Pre-Install Canvas Module
+      - name: Pre-install Canvas Package
+        run: |
+          mkdir -p ~/.npm-global/lib/node_modules
+          npm config set prefix '~/.npm-global'
+          npm install canvas
+        env:
+          PATH: ~/.npm-global/bin:$PATH
 
-      # Step 5: Run the Platane Snake Action
+      # Step 4: Run the Platane Snake Action
       - name: Generate GitHub Contribution Snake
         uses: Platane/snk/svg-only@v3
+        env:
+          NODE_PATH: ~/.npm-global/lib/node_modules
         with:
           github_user_name: Raghavendra-Reddy-Padala
           outputs: |
@@ -39,7 +40,7 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
-      # Step 6: Deploy to GitHub Pages
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
