@@ -1,32 +1,76 @@
-# Hi there, I'm Raghavendra Reddy Padala 👋
+# Hi there, I'm Raghavendra Reddy Padala 👋 
 
-## About Me
-I am a passionate software developer with a keen interest in building scalable and efficient applications. With experience in various programming languages and frameworks, I enjoy solving complex problems and learning new technologies.
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=54A6FF&center=true&vCenter=true&width=435&lines=Tech+Enthusiast;Love+Problem+Solving;Passionate+Learner" alt="Typing SVG" />
+</div>
 
-## 🔧 Technologies & Tools
-- **Languages:** Python, c, Java, C++
-- **Frameworks:** Flutter, Firebase, Node.js
-- **Databases:** MySQL, MongoDB, Firebase
-- **Tools:** Git, Docker, Kubernetes, Jenkins
-- **Cloud:** AWs, Google Cloud
+## 👨‍💻 About Me
+I am a passionate software developer focused on creating scalable and efficient applications. My journey in tech is driven by curiosity and a constant desire to learn. I thrive on solving complex problems and exploring new technologies that can make a difference.
 
-## 📈 GitHub Stats
-![Raghavendra's GitHub stats](https://github-readme-stats.vercel.app/api?username=Raghavendra-Reddy-Padala&show_icons=true&theme=radical)
+## 🔧 Tech Arsenal
 
-## 🔭 Current Projects
-- [Project Name](https://github.com/Raghavendra-Reddy-Padala/Project-Name) - .
-- [Another Project](https://github.com/Raghavendra-Reddy-Padala/Another-Project) - .
+```javascript
+const skills = {
+    languages: ['Python', 'C', 'Java', 'C++'],
+    frameworks: ['Flutter', 'Node.js'],
+    databases: ['MySQL', 'MongoDB', 'Firebase'],
+    devOps: ['Docker', 'Kubernetes', 'Git'],
+    cloud: ['AWS', 'Google Cloud'],
+};
+```
 
-## 🌱 Learning
-I am currently learning more about cloud computing and DevOps practices to enhance my skill set.
+## 📊 GitHub & LeetCode Stats
 
-## 📫 How to Reach Me
-- **Email:** [raghavareddy696969@gmail.com](mailto:raghavareddy696969@gmail.com)
-- **LinkedIn:** [Raghavendra Reddy Padala](https://www.linkedin.com/in/raghavendra-reddy-padala-28bbb6256/)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Raghavendra-Reddy-Padala&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  
+  <!-- LeetCode Stats Card -->
+  <img src="https://leetcard.jacoblin.cool/raghavareddy121212?theme=dark&font=Noto%20Sans" alt="LeetCode Stats" />
+</div>
 
-## 🤝 Let's Connect
-Feel free to connect with me on GitHub, LinkedIn, or Twitter. I'm always open to discussing new projects, ideas, or opportunities to collaborate.
+## 🚀 Featured Projects
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Raghavendra-Reddy-Padala/Project-Name">
+        <img src="/api/placeholder/90/90" width="90" alt="Project 1"/>
+        <br />
+        <sub><b>Project Name</b></sub>
+      </a>
+      <br />
+      <sub>Brief description of your project</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Raghavendra-Reddy-Padala/Another-Project">
+        <img src="/api/placeholder/90/90" width="90" alt="Project 2"/>
+        <br />
+        <sub><b>Another Project</b></sub>
+      </a>
+      <br />
+      <sub>Brief description of your project</sub>
+    </td>
+  </tr>
+</table>
 
-<!--
-**Raghavendra-Reddy-Padala/Raghavendra-Reddy-Padala** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
+## 📈 Contribution Graph
+![Snake animation](https://github.com/Raghavendra-Reddy-Padala/Raghavendra-Reddy-Padala/blob/output/github-contribution-grid-snake.svg)
+
+## 🎯 Current Focus
+- Deepening my understanding on Application Development
+- Learning how deployment work , cloud!
+- Trying Contributing to open-source projects
+- Solving algorithmic problems on LeetCode
+
+## 🤝 Connect With Me
+<div align="center">
+  
+[![Email](https://img.shields.io/badge/Email-raghavareddy696969%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:raghavareddy696969@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Raghavendra_Reddy-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/raghavendra-reddy-padala-28bbb6256/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-raghavareddy121212-yellow?style=for-the-badge&logo=leetcode)](https://leetcode.com/raghavareddy121212/)
+
+</div>
+
+---
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Raghavendra-Reddy-Padala&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
+</div>
