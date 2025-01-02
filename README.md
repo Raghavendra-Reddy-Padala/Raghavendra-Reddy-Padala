@@ -53,7 +53,7 @@ const skills = {
 </table>
 
 ## 📈 Contribution Graph
-![Snake animation](https://raw.githubusercontent.com/Raghavendra-Reddy-Padala/Raghavendra-Reddy-Padala/output/github-contribution-grid-snake.svg)
+![Snake animation](snake.svg)
 
 ## 🎯 Current Focus
 - Deepening my understanding on Application Development
