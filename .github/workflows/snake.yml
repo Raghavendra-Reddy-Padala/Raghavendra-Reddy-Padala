@@ -1,43 +1,21 @@
-name: Generate Snake
+name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
+    - cron: "0 */12 * * *" # every 12 hours
   workflow_dispatch:
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      # Step 2: Install System Dependencies for Canvas
-      - name: Install System Dependencies for Canvas
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
-
-      # Step 3: Install Node.js Dependencies in the Action's Directory
-      - name: Install Node.js Dependencies
-        run: |
-          cd $GITHUB_WORKSPACE
-          npm install canvas
-
-      # Step 4: Run the Platane Snake Action
-      - name: Generate GitHub Contribution Snake
-        uses: Platane/snk/svg-only@v3
+      - uses: Platane/snk@master
+        id: snake-gif
         with:
           github_user_name: Raghavendra-Reddy-Padala
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v3
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          
+      - uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
           target_branch: output
           build_dir: dist
