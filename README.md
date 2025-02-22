@@ -8,7 +8,7 @@
   ╚══════════════════════════════════════════════════════════════╝
 ```
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2000&pause=1000&color=54A6FF&center=true&vCenter=true&width=600&lines=Full+Stack+App+dev+✨;Cloud+Architecture+Pioneer+☁️;Algorithm+Adventurer+🗺️;Open+Source+Contributor+🏆)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2000&pause=1000&color=54A6FF&center=true&vCenter=true&width=600&lines=Full+Stack+App+dev+✨;Cloud+Entusiast+☁️;Algorithm+Adventurer+🗺️;Open+Source+Contributor+🏆)](https://git.io/typing-svg)
 
 </div>
 
