@@ -23,7 +23,7 @@
 
 </div>
 
-## 🎮 Tech Power-Ups & Skill Tree 
+## 🎮 Tech Skill Tree 
 
 <div align="center">
 
